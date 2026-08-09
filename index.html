@@ -131,6 +131,25 @@
     color:rgba(234,246,255,0.88);
   }
 
+  /* ---------- TV Ad video ---------- */
+  .tv-ad-wrap{
+    width:100%;
+    max-width:var(--maxw);
+    margin:0 0 30px;
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:var(--shadow-card);
+    border:1px solid var(--glass-border);
+    background:#000;
+  }
+  .tv-ad-video{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:56vh;
+    background:#000;
+  }
+
   /* ---------- Card ---------- */
   .card{
     width:100%;
@@ -355,6 +374,13 @@
       <p class="subtitle">Official Water Quality Test Reports</p>
       <p class="lead-text">Scan the QR Code on your bottle to verify our official laboratory&#8209;tested drinking water quality.</p>
     </header>
+
+    <div class="tv-ad-wrap fade-up delay-2">
+      <video class="tv-ad-video" controls playsinline preload="metadata" poster="dhew-logo.png">
+        <source src="videos/dhew-tv-ad.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
     <section class="card fade-up delay-3" aria-labelledby="card-title">
 
